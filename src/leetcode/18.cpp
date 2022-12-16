@@ -28,10 +28,10 @@ vector<vector<int>> fourSum(vector<int>& nums, int target) {
 		if (i > 0 && nums[i] == nums[i - 1])
 			continue;
 		// ºÙ÷¶
-		int min1 = nums[i] + nums[i + 1] + nums[i + 2] + nums[i + 3];
+		long min1 = (long) nums[i] + nums[i + 1] + nums[i + 2] + nums[i + 3];
 		if (target < min1)
 			break;
-		int max1 = nums[i] + nums[l - 1] + nums[l - 2] + nums[l - 3];
+		long max1 = (long) nums[i] + nums[l - 1] + nums[l - 2] + nums[l - 3];
 		if (target > max1)
 			continue;
 
@@ -40,10 +40,10 @@ vector<vector<int>> fourSum(vector<int>& nums, int target) {
 			if (j > i + 1 && nums[j] == nums[j - 1])
 				continue;
 			// ºÙ÷¶
-			int min2 = nums[i] + nums[j] + nums[j + 1] + nums[j + 2];
+			long min2 = (long) nums[i] + nums[j] + nums[j + 1] + nums[j + 2];
 			if (target < min2)
 				break;
-			int max2 = nums[i] + nums[j] + nums[l - 1] + nums[l - 2];
+			long max2 = (long) nums[i] + nums[j] + nums[l - 1] + nums[l - 2];
 			if (target > max2)
 				continue;
 
