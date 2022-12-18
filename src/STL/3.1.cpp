@@ -83,20 +83,16 @@ void test06() {
 
 int main()
 {
-	test06();
+	// test06();
 	
-	char str1[10] = "abcdefg";
-	char* str2 = str1;
-	string str2 = str1;
+	string str1 = "hello world";
 
-	const char* src = "qwertyu";
-
-	cout << src[0] << " " << src[1] << " " << src[2] << endl;
-
-	cout << src << endl;
-
-	cout << &src << endl;
+	string str2;
+	
+	str2.insert(0, str1.substr(0, 5));
+	cout << str2 << endl;
 
 	system("pause");
 	return 0;
+
 }
