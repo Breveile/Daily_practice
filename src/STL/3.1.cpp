@@ -88,8 +88,14 @@ int main()
 	string str1 = "hello world";
 
 	string str2;
+	int i, j = 0;
+	for (j; j < str1.size(); j++) {
+		if (str1[j] == ' ') {
+			str2.insert(0, str1.substr(i, j-i));
+			i = j;
+		}
+	}
 	
-	str2.insert(0, str1.substr(0, 5));
 	cout << str2 << endl;
 
 	system("pause");
