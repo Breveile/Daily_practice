@@ -8,7 +8,7 @@ using namespace std;
 // 先求next数组，i用于遍历，j用于回退（也是根据前缀表达式的性质）
 vector<int> getnext(string & s) {
 	vector<int> next(s.size());
-	next[1] = 0; // 第一个必定为0，直接初始化
+	next[0] = 0; // 第一个必定为0，直接初始化
 	int j = 0; // j用于回退，是有可能等于0的
 	for (int i = 1; i < s.size(); i++) {
 
@@ -44,8 +44,8 @@ int strStr(string haystack, string needle) {
 
 int main() {
 
-	string str1 = "aabaaf";
-	string str2 = "aab";
+	string str1 = "leetcode";
+	string str2 = "leeto";
 
 	cout << strStr(str1, str2) << endl;
 
