@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="28.cpp">
+    <ClCompile Include="28%28KMP%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
