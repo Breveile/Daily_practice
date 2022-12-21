@@ -28,7 +28,7 @@ bool repeatedSubstringPattern(string& s) {
 	int l = s.size();
 	if (l == 0)
 		return false;
-	// 
+	// ¹Ø¼üÒ»ĞĞ
 	if (next[l - 1] != 0 && l % (l - (next[l - 1])) == 0)
 		return true;
 	else
